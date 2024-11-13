@@ -39,10 +39,13 @@ cd paytm-app
 
 ### Step 2: Install Backend Dependencies
 
-1. Navigate to the backend folder:
+1. Navigate to the backend folder and frontend
 
    ```bash
    cd backend
+   ```
+   ```bash
+   cd frontend
    ```
 
 2. Install the necessary backend dependencies:
