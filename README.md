@@ -9,13 +9,6 @@ This is a Paytm-like application that allows users to authenticate, transfer mon
 - **User Authentication**: Users can register, log in, and authenticate using JWT (JSON Web Token).
 - **Money Transfer**: Users can transfer money to another user. Transactions are handled with rollback mechanisms in case of failure, ensuring safety and consistency.
 - **Transaction Handling**: If a transaction fails, it is aborted and the changes are rolled back to maintain the original state.
-- **Frontend**: Built with **React** and styled using **Tailwind CSS**.
-- **Backend**: Built using **Node.js**, **Express**, and **MongoDB** as the database.
-
-### Libraries Used:
-- **JWT**: For user authentication and authorization.
-- **Zod**: For input validation and schema validation.
-- **React-Router-Dom**: For routing and navigation within the frontend.
 
 ## Tech Stack
 
@@ -31,17 +24,16 @@ This is a Paytm-like application that allows users to authenticate, transfer mon
   - Zod (for input validation)
   - React-Router-Dom (for frontend routing)
 
+## some backend routes 
+**explore backend dir to know more about routes**
+ - http://localhost:port/api/v1/users/signup
+ - http://localhost:36969/api/v1/accounts/transfer
+ - http://localhost:36969/api/v1/accounts/balance
+ - http://localhost:36969/api/v1//users/update
+
 ## Installation and Running Guide
 
 Follow these steps to install and run the Paytm App locally.
-
-### Prerequisites
-
-Before getting started, ensure you have the following software installed:
-
-- **Node.js** (version 14 or higher) – [Download Node.js](https://nodejs.org/)
-- **npm** (Node Package Manager) – npm comes bundled with Node.js.
-- **MongoDB** (local or MongoDB Atlas) – [Sign up for MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or [Download MongoDB](https://www.mongodb.com/try/download/community) for local installation.
 
 ### Step 1: Clone the Repository
 
@@ -86,53 +78,37 @@ PORT=5000
 
 ### Step 4: Install Frontend Dependencies
 
-1. Navigate to the frontend folder:
 
-   ```bash
-   cd ../frontend
-   ```
 
-2. Install the necessary frontend dependencies:
+1. Install the necessary frontend dependencies both in frontend and backend dirs:
 
    ```bash
    npm install
    ```
 
-   This will install React, Tailwind CSS, and other dependencies required for the frontend.
 
-### Step 5: Start the Backend Server
-
-In the `backend` directory, run the following command to start the backend server:
-
-```bash
+### Step 5: run locally
+ 
+**backend** 
+```bash 
 node index.js
 ```
 
-This will start the Express backend server, which will run on the default port (5000) or the port specified in your `.env` file.
-
-### Step 6: Start the Frontend Application
-
-In the `frontend` directory, run the following command to start the React development server:
-
+**frontend**
 ```bash
 npm start
 ```
 
-This will launch the frontend application, which will run on `http://localhost:3000`.
+## Preveiw
+
+![Alt text](screenshorts/startpage.png)
+![Alt text](screenshorts/signup.png)
+![Alt text](screenshorts/send.png)
+![Alt text](screenshorts/dashboard.png)
+![Alt text](screenshorts/search.png)
 
 
-### Step 7: API Endpoints
 
-- **POST /api/auth/register**: Register a new user.
-- **POST /api/auth/login**: Login and authenticate the user to get a JWT token.
-- **POST /api/transfer**: Transfer money to another user (requires JWT token in the request header).
 
-### Step 9: Testing the Application
-
-1. **Register a user**: Use the `/api/auth/register` endpoint to create a new user.
-2. **Login**: Use the `/api/auth/login` endpoint to log in and get the JWT token.
-3. **Transfer money**: Use the `/api/transfer` endpoint to transfer money to another user. You'll need to pass the JWT token in the `Authorization` header for this request.
-
----
 
 
