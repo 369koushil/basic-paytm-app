@@ -37,7 +37,7 @@ git clone https://github.com/your-username/paytm-app.git
 cd paytm-app
 ```
 
-### Step 2: Install Backend Dependencies
+### Step 2: navigation and installation of dependencies
 
 1. Navigate to the backend folder and frontend
 
@@ -48,9 +48,9 @@ cd paytm-app
    cd frontend
    ```
 
-### Step 4: Install Frontend Dependencies
+2. Install  Dependencies
 
-1. Install the necessary frontend dependencies both in frontend and backend dirs:
+  run this command in both terminals
 
    ```bash
    npm install
