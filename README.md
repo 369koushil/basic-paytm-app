@@ -24,13 +24,6 @@ This is a Paytm-like application that allows users to authenticate, transfer mon
   - Zod (for input validation)
   - React-Router-Dom (for frontend routing)
 
-## some backend routes 
-**explore backend dir to know more about routes**
- - http://localhost:port/api/v1/users/signup
- - http://localhost:36969/api/v1/accounts/transfer
- - http://localhost:36969/api/v1/accounts/balance
- - http://localhost:36969/api/v1//users/update
-
 ## Installation and Running Guide
 
 Follow these steps to install and run the Paytm App locally.
