@@ -48,13 +48,14 @@ cd paytm-app
    cd frontend
    ```
 
-2. Install the necessary backend dependencies:
+### Step 4: Install Frontend Dependencies
+
+1. Install the necessary frontend dependencies both in frontend and backend dirs:
 
    ```bash
    npm install
    ```
-
-   This will install all the required packages for the backend, including Express, MongoDB, and other dependencies.
+   
 
 ### Step 3: Configure MongoDB
 
@@ -72,18 +73,9 @@ PORT=5000
 - Replace `your_mongodb_connection_string` with the actual MongoDB connection string.
 - Set a secure `JWT_SECRET` for signing JWT tokens.
 
-### Step 4: Install Frontend Dependencies
 
 
-
-1. Install the necessary frontend dependencies both in frontend and backend dirs:
-
-   ```bash
-   npm install
-   ```
-
-
-### Step 5: run locally
+### Step 4: run locally
  
 **backend** 
 ```bash 
