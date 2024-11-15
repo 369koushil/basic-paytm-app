@@ -24,7 +24,7 @@ export const StartPage = () => {
   return (
     <div className="h-screen bg-slate-100 flex flex-col justify-center items-center">
       <div className="text-center mb-8">
-        <h1 className="text-2xl font-bold text-gray-700">Welcome to Paytm</h1>
+        <h1 className="text-2xl font-bold text-gray-700">Welcome to FinPay</h1>
         <p className="text-gray-500">Your trusted partner in digital payments</p>
       </div>
 
