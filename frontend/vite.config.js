@@ -6,6 +6,6 @@ export default defineConfig({
   base:"/app",
   plugins: [react()],
   define: {
-    'BACKEND_API': JSON.stringify('http://localhost:36969/api/v1/'),
+    'BACKEND_API': JSON.stringify('https://render-backend-deploy.onrender.com/api/v1'),
   },
 })
