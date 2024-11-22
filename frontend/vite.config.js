@@ -6,6 +6,6 @@ export default defineConfig({
   base:"/",
   plugins: [react()],
   define: {
-    'BACKEND_API': JSON.stringify('https://finpay-sgnn.onrender.com/api/v1/'),
+    'BACKEND_API': JSON.stringify('https://basic-paytm-app-2pd5.onrender.com/api/v1/'),
   },
 })
